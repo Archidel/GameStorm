@@ -19,6 +19,7 @@ public class Search implements Command {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandNotFoundException {
+		
 		String name = request.getParameter(NameParameter.PRM_SEARCH_NAME);
 		String genre = request.getParameter(NameParameter.PRM_SEARCH_GENRE);
 		String gameplay = request.getParameter(NameParameter.PRM_SEARCH_GAMEPLAY);

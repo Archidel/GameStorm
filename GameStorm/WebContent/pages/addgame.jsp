@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!-- jumbotron  -->>
+<!-- jumbotron  -->
   	<%@include file="../elements/el_header_jumbotron.jspf" %>
 
 <!-- Navigation bar -->

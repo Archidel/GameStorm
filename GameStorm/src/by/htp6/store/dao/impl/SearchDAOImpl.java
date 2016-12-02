@@ -77,34 +77,10 @@ public class SearchDAOImpl implements SearchDAO {
 			
 			while(rs.next()){
 				if(rs.getString(7) != null){
-					char [] array = rs.getString(7).toCharArray();
-					for(int i = 0; i < array.length; i++){
-						if(array[i] == ','){
-							String [] words = rs.getString(7).split(",");
-							for(int j = 0; j < words.length; j++){
-								if(genre.equalsIgnoreCase(words[j].trim())){
-									if(rs.getBoolean(10) == true){
-										game = new Game();
-										game.setId(rs.getInt(1));
-										game.setName(rs.getString(2));
-										game.setPrice(rs.getInt(3));
-										game.setDeveloper(rs.getString(4));
-										game.setDataRelease(rs.getString(5));
-										game.setPartOfseries(rs.getString(6));
-										game.setGanre(rs.getString(7));
-										game.setImage(rs.getString(8));
-										game.setSite(rs.getString(9));
-										game.setStatus(rs.getBoolean(10));
-										game.setDescription(rs.getString(11));
-										game.setGameplay(rs.getString(12));
-										
-										list.add(game);
-										break;
-									}
-								}
-							}
-						}else{
-							if(genre.equalsIgnoreCase(rs.getString(7).trim())){
+					String words[] = rs.getString(7).split(",");
+					if(words != null){
+						for(int i = 0; i < words.length; i++){
+							if(genre.equalsIgnoreCase(words[i].trim())){
 								game = new Game();
 								game.setId(rs.getInt(1));
 								game.setName(rs.getString(2));
@@ -122,6 +98,24 @@ public class SearchDAOImpl implements SearchDAO {
 								list.add(game);
 								break;
 							}
+						}
+					}else{
+						if(genre.equalsIgnoreCase(rs.getString(7).trim())){
+							game = new Game();
+							game.setId(rs.getInt(1));
+							game.setName(rs.getString(2));
+							game.setPrice(rs.getInt(3));
+							game.setDeveloper(rs.getString(4));
+							game.setDataRelease(rs.getString(5));
+							game.setPartOfseries(rs.getString(6));
+							game.setGanre(rs.getString(7));
+							game.setImage(rs.getString(8));
+							game.setSite(rs.getString(9));
+							game.setStatus(rs.getBoolean(10));
+							game.setDescription(rs.getString(11));
+							game.setGameplay(rs.getString(12));
+							
+							list.add(game);	
 						}
 					}
 				}
@@ -228,37 +222,13 @@ public class SearchDAOImpl implements SearchDAO {
 			con = pool.take();
 			Statement state = con.createStatement();
 			ResultSet rs = state.executeQuery(SQLCommand.SELECT_FROM_GAMES);
-
+		
 			while(rs.next()){
 				if(rs.getString(12) != null){
-					char [] array = rs.getString(12).toCharArray();
-					for(int i = 0; i < array.length; i++){
-						if(array[i] == ','){
-							String [] words = rs.getString(12).split(",");
-							for(int j = 0; j < words.length; j++){
-								if(gameplay.equalsIgnoreCase(words[j].trim())){
-									if(rs.getBoolean(10) == true){
-										game = new Game();
-										game.setId(rs.getInt(1));
-										game.setName(rs.getString(2));
-										game.setPrice(rs.getInt(3));
-										game.setDeveloper(rs.getString(4));
-										game.setDataRelease(rs.getString(5));
-										game.setPartOfseries(rs.getString(6));
-										game.setGanre(rs.getString(7));
-										game.setImage(rs.getString(8));
-										game.setSite(rs.getString(9));
-										game.setStatus(rs.getBoolean(10));
-										game.setDescription(rs.getString(11));
-										game.setGameplay(rs.getString(12));
-										
-										list.add(game);
-										break;
-									}
-								}
-							}
-						}else{
-							if(gameplay.equalsIgnoreCase(rs.getString(12).trim())){
+					String words[] = rs.getString(12).split(",");
+					if(words != null){
+						for(int i = 0; i < words.length; i++){
+							if(gameplay.equalsIgnoreCase(words[i].trim())){
 								game = new Game();
 								game.setId(rs.getInt(1));
 								game.setName(rs.getString(2));
@@ -276,6 +246,24 @@ public class SearchDAOImpl implements SearchDAO {
 								list.add(game);
 								break;
 							}
+						}
+					}else{
+						if(gameplay.equalsIgnoreCase(rs.getString(12).trim())){
+							game = new Game();
+							game.setId(rs.getInt(1));
+							game.setName(rs.getString(2));
+							game.setPrice(rs.getInt(3));
+							game.setDeveloper(rs.getString(4));
+							game.setDataRelease(rs.getString(5));
+							game.setPartOfseries(rs.getString(6));
+							game.setGanre(rs.getString(7));
+							game.setImage(rs.getString(8));
+							game.setSite(rs.getString(9));
+							game.setStatus(rs.getBoolean(10));
+							game.setDescription(rs.getString(11));
+							game.setGameplay(rs.getString(12));
+							
+							list.add(game);	
 						}
 					}
 				}
