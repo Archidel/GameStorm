@@ -18,9 +18,7 @@
 					<label class="col-md-4 control-label">Name:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-       						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_name" type="text" class="form-control input-md">
       					</div>
   					</div>
@@ -31,9 +29,7 @@
 					<label class="col-md-4 control-label">Price:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-       						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_price" type="text" class="form-control input-md">
       					</div>
   					</div>
@@ -44,9 +40,7 @@
 					<label class="col-md-4 control-label">URL image</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-       						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_image" type="text" class="form-control input-md">
       					</div>
   					</div>
@@ -57,9 +51,7 @@
 					<label class="col-md-4 control-label">Developer:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-       						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_developer" type="text" class="form-control input-md">
       					</div>
   					</div>
@@ -70,9 +62,7 @@
 					<label class="col-md-4 control-label">Part of series:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-       						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_part_of_series" type="text" class="form-control input-md">
       					</div>
   					</div>
@@ -83,9 +73,7 @@
 					<label class="col-md-4 control-label">Data Release:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-       						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_data_release" type="text" type="date" class="form-control input-md">
       					</div>
       					<em>Example: dd.mm.yyyy</em>
@@ -97,9 +85,7 @@
 					<label class="col-md-4 control-label">Genre:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-      						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_genre" type="text" class="form-control input-md">
       					</div>
   					</div>
@@ -110,9 +96,7 @@
 					<label class="col-md-4 control-label">Game play:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-      						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="gameplay" type="text" class="form-control input-md">
       					</div>
   					</div>
@@ -123,9 +107,7 @@
 					<label class="col-md-4 control-label">Site:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
-				    		<div class="input-group-addon">
-        						<i class="fa fa-user"></i>
-       						</div>
+				    		<div class="input-group-addon"><i class="fa fa-user"></i></div>
        						<input name="game_site" type="text" class="form-control input-md">
       					</div>
   					</div>
