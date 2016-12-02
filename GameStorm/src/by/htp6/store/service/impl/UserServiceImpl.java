@@ -12,7 +12,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User SingInUser(User user) throws ServiceException {
-		if(user.getLogin() != null && user.getLogin() != null){
+		if(user.getLogin() != null && user.getPassword() != null){
 			DAOFactory daoFactory = DAOFactory.getInstance();
 			UserDAO userDAO = daoFactory.getUserDAO();
 			
@@ -48,6 +48,13 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User EditProfile(User user, String newPassword, String ConfNewPassword) throws ServiceException {
+		if((newPassword == null) || (newPassword.equals(""))){
+			newPassword = user.getPassword();
+		}
+		if((ConfNewPassword == null) || (ConfNewPassword.equals(""))){
+			ConfNewPassword = user.getPassword();
+		}
+		
 		if(ValidationData.passwordValid(newPassword, ConfNewPassword)){
 			user.setPassword(newPassword);
 			

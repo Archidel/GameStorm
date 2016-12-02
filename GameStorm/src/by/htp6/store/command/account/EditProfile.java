@@ -20,7 +20,7 @@ public class EditProfile implements Command {
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandNotFoundException {
 		String newPassword = request.getParameter(NameParameter.PRM_USER_PASSWORD); // means new password
 		String confNewPassword = request.getParameter(NameParameter.PRM_USER_RE_PASSWORD);// means new re-password
-	 
+	 	
 		User user = null;
 		
 		try {	//packing user for transmission to layers
