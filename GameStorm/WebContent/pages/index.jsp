@@ -23,7 +23,7 @@
 
 <!-- Containers -->
 	<div class="container">
-	  	<%@include file="../elements/el_body_main_row_1.jspf" %>
+	  	<%@include file="../elements/el_body_main_page.jspf" %>
 	</div>
 
  <!-- footer -->	
