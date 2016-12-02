@@ -47,7 +47,7 @@
 <!-- link NEWS -->
 				<li>
 					<form action="Controller" method="post" class="navbar-form">
-						<a><button type="submit" name="command" value="show_news" class="btn btn-link "><span class="glyphicon glyphicon glyphicon-list-alt"></span> ${news}</button></a>
+						<a href="error"><button type="button" class="btn btn-link "><span class="glyphicon glyphicon glyphicon-list-alt"></span> ${news}</button></a>
 					</form>		
 				</li>	
 <!-- dropdown list gameplay -->
