@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>    
-<%@include file="../pages/localization.jsp" %>	<!-- localization -->
+<%@include file="../elements/localization.jspf" %>	<!-- localization -->
 <!DOCTYPE html PUBLIC>
 
 <html>
