@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<div class="row">
+  <div class="col-md-4"><legend>${admin_games}</legend></div>
+  <div class="col-md-4"><legend>${admin_games_users}</legend></div>
+  <div class="col-md-4"><legend>${admin_games_other}</legend></div>
+</div>
+
+<div class="row">
+	<form action="Controller" method = "get">
+	  
+	  <div class="col-md-4">  	
+	  	<a href="addgame"><button type="button" class="btn btn-default form-control">${admin_games_add_game}</button></a>
+		<a href="listgame"><button type="submit" name="command" value="show_game_lsit" class="btn btn-default form-control">${admin_games_show_list_of_games}</button></a> 
+	  </div>
+  
+	  <div class="col-md-4">
+	 	<a href="listuser"><button type="submit" name="command" value="show_user_list" class="btn btn-default form-control">${admin_games_show_list_of_users}</button></a> 
+	  </div>
+  
+	  <div class="col-md-4">
+	  	<button type="submit" name="command" value="unknow" class="btn btn-default form-control">${admin_games_other_empty_submit}</button> 
+		<button type="submit" name="command" value="unknow" class="btn btn-default form-control">${admin_games_other_empty_submit}</button> 
+	  </div>
+	  
+	  <br><br><br><br><br>
+  
+  </form>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="../pages/localization.jsp" %>	<!-- localization -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-4">
+			<img src="${item.image}" class="img-rounded" width="250" height="300">
+			<c:if test="${sessionScope.logged == true}">
+				<form action="Controller" method="post">
+					<input type="hidden" name="command" value="add_to_cart" />
+					<button type="submit" name="game_id" value="${item}" class="btn btn-success" style="width: 250">Добавить в карзину</button>		
+				</form>
+			</c:if>
+		</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-8">
+			<div class = "row"><h3>${item.name}</h3></div><hr>
+			<div class = "row"><b>Price:</b> $ ${item.price}</div><br>
+			<div class = "row"><b>Developer:</b> ${item.developer}</div><br>
+			<div class = "row"><b>Date Release:</b> ${item.dataRelease}</div><br>
+			<div class = "row"><b>Part of Series:</b> ${item.partOfseries}</div><br>
+			<div class = "row"><b>Genre:</b> ${item.ganre}</div><br>	
+			<div class = "row"><b>Game play:</b> ${item.gameplay}</div><br>
+		</div>
+	
+		<div class = "row"><b>Description:</b><hr>
+			<b>${item.description}</b>
+		</div>
+		<br>
+	</div>
+
+</body>
+</html>

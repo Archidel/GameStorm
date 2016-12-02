@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">	
+  		<h4>CONTACT DETAIL</h4>
+  		<hr>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4"><b> <span class = "glyphicon glyphicon-user"></span> Author:</b> Albert Zarankovich</div>
+		<div class="col-md-4"><b>Helpline Numbers (8AM to 10PM):</b> 8044 475-33-85</div>
+		<div class="col-md-4"> <p><span class = "glyphicon glyphicon-envelope"></span><b> Email</b> <a href="https://mail.google.com/mail/u/0/#inbox">gmail.com</a></p></div>
+	</div>
+
+</div>	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="copyright">
+					© 2016, GameStore, Project special for Hi-Tech Park 6
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

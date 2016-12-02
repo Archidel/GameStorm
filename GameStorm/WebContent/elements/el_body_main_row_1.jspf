@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html PUBLIC>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+<div class="row" >
+
+	<c:forEach items="${sessionScope.random_list}" var = "random" >
+   		<div class="col-md-3 col-sm-6" style="width: 275px; height: 450px;">
+    		<span class="thumbnail">
+      			<img src="${random.image}" alt="..." style="width: 200px" class="img-responsive">
+      			<h4>${random.name}</h4>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$ ${random.price}</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<form action="Controller" method="get">
+      						<input type="hidden" name="command" value="more_about_game" />
+      						<button class="btn btn-success right" type = "submit" name="game_id" value="${random.id}"> More</button>
+      					</form>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  	 </c:forEach>
+</div>
+
+</body>
+</html>

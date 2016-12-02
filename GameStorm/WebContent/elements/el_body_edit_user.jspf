@@ -1,0 +1,97 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+
+	<h1>Edit Profile</h1>
+  	<hr>
+	<div class="row">
+
+  		
+<!-- edit form column -->
+      	<div class="col-md-9 personal-info">
+        	<h3>Personal info</h3>
+
+<!-- form data user -->
+     	<form action="Controller" method="post" class="form-horizontal">
+     		<input type="hidden" name="command" value="edit_profile" />
+     		
+<!-- name input -->
+			<div class="control-group">
+				<label class="control-label">${name_register}:</label>
+				<div class="controls">
+				   	<input  name="user_name" value="${user.name}" class="form-control" type="text" placeholder="${placeholder_name_register}" class="input-large" style="width:300px" required="">
+				</div>
+			</div>
+            
+<!-- surname input -->
+			<div class="control-group">
+			  	<label class="control-label">${surname_register}:</label>
+			  	<div class="controls">
+			      	<input name="user_surname" value="${user.surname}" class="form-control" type="text" placeholder="${placeholder_surname_register}" class="input-large" style="width:300px" required="">
+			   	</div>
+			</div>
+         
+<!-- date input -->
+			<div class="control-group">
+				<label class="control-label">${yearbirth_register}:</label>
+				<div class="controls">
+					<input class="form-control"  name="user_years_old" value="${user.yearsOld}" type="date"  style="width:300px"> 
+				</div>
+			</div>
+          
+<!-- email input -->
+			<div class="control-group">
+				<label class="control-label">${email_register}:</label>
+				<div class="controls">
+				   	<input name="user_email" value="${user.email}" class="form-control" type="text" placeholder="Exalltorius@gmail.com" style="width:300px" class="input-large" required="">
+				</div>
+			</div>
+          
+ <!-- old Password input -->
+			<div class="control-group">
+				<label class="control-label">Old password:</label>
+				<div class="controls">
+					<input name="user_old_password" class="form-control" type="password" placeholder="********" style="width:300px" class="input-large">
+				</div>
+			</div>          
+          
+          
+ <!-- new Password input -->
+			<div class="control-group">
+				<label class="control-label">new password:</label>
+				<div class="controls">
+					<input name="user_password" class="form-control" type="password" placeholder="********" style="width:300px" class="input-large">
+				    <em>1-8 ${password_characters_register}</em>
+				</div>
+			</div>
+            
+<!-- new repeat password input -->
+			<div class="control-group">
+				<label class="control-label">${reenterpassword_register}:</label>
+				<div class="controls">
+					<input class="form-control" name="user_re_password" type="password" placeholder="********" style="width:300px" class="input-large">
+				</div>
+			</div>
+			
+			<br>
+			<br>
+          
+          	<div class="form-group">
+            	<label class="col-md-3 control-label"></label>
+            	<div class="col-md-8">
+            		<input  value = "Save changes" name="saveChangesBtn" class = "btn btn-primary" type = "submit"/>
+            		<a href="index"><input value = "Cancel" name="resetBtn" class = "btn btn-default" type = "button"/></a>
+            	</div>
+          	</div>
+        
+        </form>
+      </div>
+  </div>
+  
+</body>
+</html>
