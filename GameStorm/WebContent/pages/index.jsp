@@ -17,19 +17,15 @@
 	<%@include file="../elements/el_header_jumbotron.jspf" %>
 
 <!-- Navigation bar -->
-	<nav class="navbar navbar-inverse" role="navigation">
-		<%@include file="../elements/el_header_nav.jspf" %>
-	</nav>
+	<%@include file="../elements/el_header_nav.jspf" %>
 
 <!-- Containers -->
 	<div class="container">
 	  	<%@include file="../elements/el_body_main_page.jspf" %>
 	</div>
 
- <!-- footer -->	
-	<footer class="footer1">
-		<%@include file="../elements/el_footer.jspf" %>  
-	</footer>
+<!-- footer -->	
+	<%@include file="../elements/el_footer.jspf" %>  
 
 
 </body>

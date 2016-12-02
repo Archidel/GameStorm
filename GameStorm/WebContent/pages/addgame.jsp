@@ -17,9 +17,7 @@
   	<%@include file="../elements/el_header_jumbotron.jspf" %>
 
 <!-- Navigation bar -->
-	<nav class="navbar navbar-inverse" role="navigation">
-		<%@include file="../elements/el_header_nav.jspf" %>
-	</nav>
+	<%@include file="../elements/el_header_nav.jspf" %>
 
 <!-- Containers -->
 	<div class="container">
@@ -27,9 +25,7 @@
 	</div>
 
 <!-- footer -->	
-	<footer class="footer1">
-		<%@include file="../elements/el_footer.jspf" %>  
-	</footer>
+	<%@include file="../elements/el_footer.jspf" %>  
 
 </body>
 </html>

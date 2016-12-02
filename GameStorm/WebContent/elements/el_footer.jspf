@@ -6,7 +6,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-
+<footer class="footer1">
+	
 <div class="container">
 	<div class="row">	
   		<h4>CONTACT DETAIL</h4>
@@ -29,5 +30,6 @@
 			</div>
 		</div>
 	</div>
+</footer>
 </body>
 </html>

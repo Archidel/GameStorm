@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	
+<nav class="navbar navbar-inverse" role="navigation">
 	<div class="container-fluid">
 	 
 <!-- Brand and toggle get grouped for better mobile display -->
@@ -141,7 +141,7 @@
       		</ul><!-- END right navbar -->      
       	</div><!-- /.navbar-collapse -->
  	</div><!-- /.container-fluid -->
-
+</nav>
 
 <!------------------------------------------------------------------------------------------------------------------------------------------>
 <!-- -------------------------------------------------Cart---Modal --------------------------------------------------------------------- -->
