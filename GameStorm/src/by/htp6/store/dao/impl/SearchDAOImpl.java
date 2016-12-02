@@ -137,9 +137,6 @@ public class SearchDAOImpl implements SearchDAO {
 
 	@Override
 	public ArrayList<Game> RandomGame() throws DAOException {
-		//Узнать количество строк idшников
-		//выбрать 20 игр (зарандомить ид, вытянуть из бд, положить в массив).
-		//////////////////////////////////////////////////////////////////////
 
 		ConnectionPool pool = ConnectionPool.getInstance();
 		ArrayList<Game> list = new ArrayList<Game>();

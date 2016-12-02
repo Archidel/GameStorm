@@ -13,7 +13,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 ">
-			<form class="form-horizontal" action="Controller" method="get">
+			<form class="form-horizontal" action="Controller" method="post">
 				<legend>Edit game</legend>
 				
 <!-- Text input-->

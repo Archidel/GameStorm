@@ -66,6 +66,15 @@ public class EditGame implements Command {
 		String description = request.getParameter(NameParameter.PRM_GAME_DESCRIPTION);
 		String gameplay = request.getParameter(NameParameter.PRM_GAME_GAMEPLAY);
 		
+		System.out.println(name);
+		System.out.println(priceStr);
+		System.out.println(site);
+		System.out.println(dateRelease);
+		System.out.println(genre);
+		System.out.println(site);
+		System.out.println(description);
+		System.out.println(gameplay);
+		
 		Game game = new Game();
 		HttpSession session = request.getSession();
 		game = (Game) session.getAttribute("game_edit");
