@@ -59,6 +59,7 @@ public class NameParameter {
 	public static final String PRM_REMOVE_FROM_CART_ALL = "all";
 	public static final String PRM_REMOVE_FROM_CART_ONE = "one";
 	public static final String PRM_REMOVE_GAME_FORM_CART = "remove";
+	public static final String PRM_REQUEST_FROM_PAGE = "request_from_page";
 	
 	
 }

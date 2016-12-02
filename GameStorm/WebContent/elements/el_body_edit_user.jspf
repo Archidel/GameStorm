@@ -14,7 +14,7 @@
   		
 <!-- edit form column -->
       	<div class="col-md-9 personal-info">
-        	<h3>Personal info</h3>
+        	<h3>${personal_info}</h3>
 
 <!-- form data user -->
      	<form action="Controller" method="post" class="form-horizontal">
@@ -54,7 +54,7 @@
           
  <!-- old Password input -->
 			<div class="control-group">
-				<label class="control-label">Old password:</label>
+				<label class="control-label">${old_password}:</label>
 				<div class="controls">
 					<input name="user_old_password" class="form-control" type="password" placeholder="********" style="width:300px" class="input-large">
 				</div>
@@ -63,7 +63,7 @@
           
  <!-- new Password input -->
 			<div class="control-group">
-				<label class="control-label">new password:</label>
+				<label class="control-label">${new_passwprd}:</label>
 				<div class="controls">
 					<input name="user_password" class="form-control" type="password" placeholder="********" style="width:300px" class="input-large">
 				    <em>1-8 ${password_characters_register}</em>
@@ -72,7 +72,7 @@
             
 <!-- new repeat password input -->
 			<div class="control-group">
-				<label class="control-label">${reenterpassword_register}:</label>
+				<label class="control-label">${new_conf_password}:</label>
 				<div class="controls">
 					<input class="form-control" name="user_re_password" type="password" placeholder="********" style="width:300px" class="input-large">
 				</div>
@@ -84,8 +84,8 @@
           	<div class="form-group">
             	<label class="col-md-3 control-label"></label>
             	<div class="col-md-8">
-            		<input  value = "Save changes" name="saveChangesBtn" class = "btn btn-primary" type = "submit"/>
-            		<a href="index"><input value = "Cancel" name="resetBtn" class = "btn btn-default" type = "button"/></a>
+            		<input  value = "${save_changes}" name="saveChangesBtn" class = "btn btn-primary" type = "submit"/>
+            		<a href="index"><input value = "${cancel}" name="resetBtn" class = "btn btn-default" type = "button"/></a>
             	</div>
           	</div>
         

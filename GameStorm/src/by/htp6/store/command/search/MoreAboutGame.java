@@ -30,12 +30,15 @@ public class MoreAboutGame implements Command {
 			try {
 				game = searchService.GetGameById(idGame);
 				page = NamePage.GAME_PAGE;
+				
 			} catch (ServiceException e) {
 				e.printStackTrace();
 				page = NamePage.ERROR_PAGE;
 			}
+			
 			HttpSession session = request.getSession();
 			session.setAttribute("item", game);
+			
 		}
 		return page;
 	}

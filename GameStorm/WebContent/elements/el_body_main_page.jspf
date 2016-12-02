@@ -9,7 +9,8 @@
 <body>
 
 <div class="row" >
-
+<h3>${Recently_added_games}</h3>
+<hr>
 	<c:forEach items="${sessionScope.random_list}" var = "random" >
    		<div class="col-md-3 col-sm-6" style="width: 275px; height: 450px;">
     		<span class="thumbnail">
@@ -21,10 +22,12 @@
       					<p class="price">$ ${random.price}</p>
       				</div>
       				<div class="col-md-6 col-sm-6">
-      					<form action="Controller" method="get">
+      				
+      				<%-- 	<form action="Controller" method="get">
       						<input type="hidden" name="command" value="more_about_game" />
       						<button class="btn btn-success right" type = "submit" name="game_id" value="${random.id}"> More</button>
       					</form>
+      				 --%>
       				</div>
       				
       			</div>

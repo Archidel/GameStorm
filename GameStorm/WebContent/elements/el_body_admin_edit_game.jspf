@@ -14,11 +14,11 @@
 	<div class="row">
 		<div class="col-md-10 ">
 			<form class="form-horizontal" action="Controller" method="post">
-				<legend>Edit game</legend>
+				<legend>${edit_game_title}</legend>
 				
 <!-- Text input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Name:</label>  
+					<label class="col-md-4 control-label">${name_register}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -31,7 +31,7 @@
 
 <!-- price input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Price:</label>  
+					<label class="col-md-4 control-label">${price}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -44,7 +44,7 @@
 				
 <!-- url image input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">URL image</label>  
+					<label class="col-md-4 control-label">${url_image}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -57,7 +57,7 @@
 
 <!-- developer input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Developer:</label>  
+					<label class="col-md-4 control-label">${developer}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -70,7 +70,7 @@
 
 <!-- part of series input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Part of series:</label>  
+					<label class="col-md-4 control-label">${part_of_series}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -83,7 +83,7 @@
 
 <!-- part of series input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Data Release:</label>  
+					<label class="col-md-4 control-label">${date_release}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -97,7 +97,7 @@
 
 <!-- ganre input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Genre:</label>  
+					<label class="col-md-4 control-label">${genre}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -110,7 +110,7 @@
 
 <!-- game play input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Game play:</label>  
+					<label class="col-md-4 control-label">${game_play}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -123,7 +123,7 @@
 				
 <!-- site game input-->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Site:</label>  
+					<label class="col-md-4 control-label">${site}:</label>  
 				  	<div class="col-md-4">
 				 		<div class="input-group">
 				    		<div class="input-group-addon">
@@ -136,7 +136,7 @@
 				
 <!-- Description textarea -->
 				<div class="form-group">
-					<label class="col-md-4 control-label">Description:</label>
+					<label class="col-md-4 control-label">${description}:</label>
 					<div class="col-md-4">                     
 				    	<textarea class="form-control" rows="10" name="game_description">${edit.description}</textarea>
 				  	</div>
@@ -147,8 +147,8 @@
   					<div class="col-md-4">
   						<input type="hidden" name="command" value="edit_game" />
   						
-						<button type="submit" name="edit_game_success" value="success" class="btn btn-success"><span class="glyphicon glyphicon-share"></span> Edit game</button>
-					  	<a href="administration" class="btn btn-danger" ><span class="glyphicon glyphicon-remove-sign"></span> Close</a>
+						<button type="submit" name="edit_game_success" value="success" class="btn btn-success"><span class="glyphicon glyphicon-share"></span> ${save_changes}</button>
+					  	<a href="administration" class="btn btn-danger" ><span class="glyphicon glyphicon-remove-sign"></span> ${cancel}</a>
 					</div>
 				</div>
 			</form>

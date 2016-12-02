@@ -14,7 +14,7 @@ public class AddToCart implements Command {
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandNotFoundException {
-	
+		
 		HttpSession session = request.getSession();
 		Game game = (Game) session.getAttribute("item");
 		Cart cart = (Cart) session.getAttribute("cart");

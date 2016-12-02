@@ -21,15 +21,15 @@
 		
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			<div class = "row"><h3>${item.name}</h3></div><hr>
-			<div class = "row"><b>Price:</b> $ ${item.price}</div><br>
-			<div class = "row"><b>Developer:</b> ${item.developer}</div><br>
-			<div class = "row"><b>Date Release:</b> ${item.dataRelease}</div><br>
-			<div class = "row"><b>Part of Series:</b> ${item.partOfseries}</div><br>
-			<div class = "row"><b>Genre:</b> ${item.ganre}</div><br>	
-			<div class = "row"><b>Game play:</b> ${item.gameplay}</div><br>
+			<div class = "row"><b>${price}:</b> $ ${item.price}</div><br>
+			<div class = "row"><b>${developer}:</b> ${item.developer}</div><br>
+			<div class = "row"><b>${date_release }:</b> ${item.dataRelease}</div><br>
+			<div class = "row"><b>${part_of_series}:</b> ${item.partOfseries}</div><br>
+			<div class = "row"><b>${genre}:</b> ${item.ganre}</div><br>	
+			<div class = "row"><b>${game_play}:</b> ${item.gameplay}</div><br>
 		</div>
 	
-		<div class = "row"><b>Description:</b><hr>
+		<div class = "row"><b>${description}:</b><hr>
 			<b>${item.description}</b>
 		</div>
 		<br>

@@ -25,8 +25,12 @@ public class RemoveFromCart implements Command {
 		}
 		
 		if(remove.equals(NameParameter.PRM_REMOVE_FROM_CART_ALL)){
-			cart.clearList();
-			session.setAttribute("cart", cart);
+			if(cart == null){
+				page = NamePage.INDEX_PAGE;	
+			}else{
+				cart.clearList();
+				session.setAttribute("cart", cart);	
+			}
 		}
 
 		if(remove.equals(NameParameter.PRM_REMOVE_FROM_CART_ONE)){

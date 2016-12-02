@@ -58,7 +58,7 @@
 				    		<input type="hidden" name="command" value="search" />
 				     		<button type="submit" name="search_gameplay" value="cooperative" class="btn btn-default form-control">${cooperative}</button> 
 				        	<button type="submit" name="search_gameplay" value="multiplayer" class="btn btn-default form-control">${multiplayer}</button>
-				        	<button type="submit" name="search_gameplay" value="singleplayer" class="btn btn-default form-control">singleplayer</button>  
+				        	<button type="submit" name="search_gameplay" value="singleplayer" class="btn btn-default form-control">${singleplayer}</button>  
 				        	<button type="submit" name="search_gameplay" value="split screen" class="btn btn-default form-control">${splitscreen}</button> 
 				        	<button type="submit" name="search_gameplay" value="hot seat" class="btn btn-default form-control">${hotseat}</button>
 				        	<button type="submit" name="search_gameplay" value="console game" class="btn btn-default form-control">${consolegames}</button> 
@@ -80,9 +80,9 @@
 				          	<button type="submit" name="search_genre" value="racing" class="btn btn-default form-control">${racing}</button>
 				          	<button type="submit" name="search_genre" value="mmo" class="btn btn-default form-control">${mmo}</button>
 				          	<button type="submit" name="search_genre" value="mmorpg" class="btn btn-default form-control">MMORPG</button>
-				          	<button type="submit" name="search_genre" value="surival" class="btn btn-default form-control">Survival</button>
-				          	<button type="submit" name="search_genre" value="simulator" class="btn btn-default form-control">simulator</button>
-				          	<button type="submit" name="search_genre" value="moba" class="btn btn-default form-control">moba</button>
+				          	<button type="submit" name="search_genre" value="surival" class="btn btn-default form-control">${survival}</button>
+				          	<button type="submit" name="search_genre" value="simulator" class="btn btn-default form-control">${simulator}</button>
+				          	<button type="submit" name="search_genre" value="moba" class="btn btn-default form-control">${moba}</button>
 				        </div>
 				  	</form>
 			  	</li>
@@ -152,7 +152,7 @@
     	<div class="modal-content">
       		<div class="modal-header">
         		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        		<h4 class="modal-title">Shopping list</h4>
+        		<h4 class="modal-title">${title_cart}</h4>
 				<b> Count items: </b><c:out value="${sessionScope.cart.lenghtList}"/>
       		</div>
       		<c:if test="${not empty cart}">
@@ -168,7 +168,7 @@
 			      		           	<form action="Controller" method="post">
 					       				<input type="hidden" name="command" value="remove_from_cart" />
 					       				<input type="hidden" name="remove" value="one" />
-					       				<button type="submit" name="game_id" value="${list.id}" class="btn btn-danger">Remove item from cart</button>
+					       				<button type="submit" name="game_id" value="${list.id}" class="btn btn-danger">${item_from_cart}</button>
 					       			</form>
 			                   	</div>
 			              	    <div class="col-sm-3 col-xs-3 text-right">
@@ -188,18 +188,18 @@
       		<div class="modal-footer">
 	      		<div class="row">
 				  	<div class="col-xs-6 col-sm-4">
-				  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  		<button type="button" class="btn btn-default" data-dismiss="modal">${close_auth}</button>
 				  	</div>
 				  	<div class="col-xs-6 col-sm-4">
 					  	<form action="Controller" method="post">
 	        				<input type="hidden" name="command" value="remove_from_cart" />
-	        				<button type="submit" name="remove" value="all" class="btn btn-danger">Remove all</button>
+	        				<button type="submit" name="remove" value="all" class="btn btn-danger">${remove_all_from_cart}</button>
 	        			</form>
         			</div>
         			
 				  	<div class="col-xs-6 col-sm-4">        		
 				  		<form action="Controller" method="post">
-        					<button type="submit" name="command" value="make_order" class="btn btn-success">Make order</button>
+        					<button type="submit" name="command" value="make_order" class="btn btn-success">${make_order}</button>
       					</form>
       				</div>
 				</div>		

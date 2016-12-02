@@ -18,14 +18,12 @@
 	<fmt:message bundle="${loc}" key="local.nav.bar.article.news" var="news" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.other" var="other" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.search" var="search" />
-	
 	<fmt:message bundle="${loc}" key="local.nav.bar.gameplay" var="gameplay" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.gameplay.cooperative" var="cooperative" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.gameplay.multiplayer" var="multiplayer" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.gameplay.free" var="freegame" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.gameplay.splitscreen" var="splitscreen" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.gameplay.hotseat" var="hotseat" />
-	
 	<fmt:message bundle="${loc}" key="local.nav.bar.genre" var="genre" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.genre.action" var="action" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.genre.arcade" var="arcade" />
@@ -35,7 +33,6 @@
 	<fmt:message bundle="${loc}" key="local.nav.bar.genre.racing" var="racing" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.genre.mmo" var="mmo" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.genre.consolegames" var="consolegames" />
-	
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.close" var="close_auth" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.singin" var="singin" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.singin.login" var="login_singin" />
@@ -49,16 +46,17 @@
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.register.yearbirth" var="yearbirth_register" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.register.email" var="email_register" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.register.password" var="password_register" />
+	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.singin.password.old" var="old_password" />
+	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.singin.password.new" var="new_passwprd" />
+	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.singin.password.new.conf" var="new_conf_password" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.register.password.characters" var="password_characters_register" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.register.reenterpassword" var="reenterpassword_register" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.register.singup" var="singup_register" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.message" var="message_why" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.authorization.why" var="why" />
-	
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.personaluseraccount" var="personal_user_accaunt" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.profile" var="profile_user_accaunt" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.administration" var="admin_user_account" />
-	
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.administration.games" var="admin_games" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.administration.games.add_game" var="admin_games_add_game" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.administration.games.show_list_of_games" var="admin_games_show_list_of_games" />
@@ -66,23 +64,30 @@
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.administration.users.show_list_of_users" var="admin_games_show_list_of_users" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.administration.other" var="admin_games_other" />
 	<fmt:message bundle="${loc}" key="local.nav.bar.account.administration.other.empty_submit" var="admin_games_other_empty_submit" />
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<fmt:message bundle="${loc}" key="local.nav.bar.account.exit" var="exit_user_accaunt" />
-	
+	<fmt:message bundle="${loc}" key="local.nav.bar.gameplay.singleplayer" var="singleplayer" />
+	<fmt:message bundle="${loc}" key="local.nav.bar.genre.survival" var="survival" />
+	<fmt:message bundle="${loc}" key="local.nav.bar.genre.simulator" var="simulator" />
+	<fmt:message bundle="${loc}" key="local.nav.bar.genre.moba" var="moba" />
+	<fmt:message bundle="${loc}" key="local.cart.list.title" var="title_cart" />
+	<fmt:message bundle="${loc}" key="local.cart.list.remove.item" var="item_from_cart" />
+	<fmt:message bundle="${loc}" key="local.cart.list.remove.all" var="remove_all_from_cart" />
+	<fmt:message bundle="${loc}" key="local.cart.list.order.make" var="make_order" />
+	<fmt:message bundle="${loc}" key="local.game.item.price" var="price" />
+	<fmt:message bundle="${loc}" key="local.game.item.developer"  var="developer" />
+	<fmt:message bundle="${loc}" key="local.game.item.date_release" var="date_release" />
+	<fmt:message bundle="${loc}" key="local.game.item.part_of_series" var="part_of_series" />
+	<fmt:message bundle="${loc}" key="local.game.item.genre" var="genre" />
+	<fmt:message bundle="${loc}" key="local.game.item.game_play" var="game_play" />
+	<fmt:message bundle="${loc}" key="local.game.item.description" var="description" />
+	<fmt:message bundle="${loc}" key="local.game.item.site" var="site" />
+	<fmt:message bundle="${loc}" key="local.game.item.edit.title" var="edit_game_title" />	
+	<fmt:message bundle="${loc}" key="local.nav.bar.account.exit" var="exit_user_accaunt" />	
 	<fmt:message bundle="${loc}" key="local.jumbotron.message.hello" var="hello_user" />
-	
-	
-	
+	<fmt:message bundle="${loc}" key="local.user.edit.personal_info" var="personal_info" />
+	<fmt:message bundle="${loc}" key="local.button.save_change" var="save_changes" />
+	<fmt:message bundle="${loc}" key="local.button.cancel" var="cancel" />
+	<fmt:message bundle="${loc}" key="local.button.back" var="back_btn" />
+	<fmt:message bundle="${loc}" key="local.button.add_new_game" var="add_new_game_btn" />
+	<fmt:message bundle="${loc}" key="local.game.item.image" var="url_image" />
+	<fmt:message bundle="${loc}" key="local.index.Recently_added_games" var="Recently_added_games" />
 </html>
