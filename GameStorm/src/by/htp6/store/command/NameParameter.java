@@ -52,14 +52,12 @@ public class NameParameter {
 	public static final String PRM_GAME_DESCRIPTION = "game_description";
 	public static final String PRM_GAME_ID = "game_id";
 	public static final String PRM_GAME_GAMEPLAY = "gameplay";
-
+		//other
 	public static final String PRM_GAME_EDIT_SUCCESS = "edit_game_success";
 	public static final String PRM_OBJECT_GAME = "obj_game";
 		//cart
 	public static final String PRM_REMOVE_FROM_CART_ALL = "all";
 	public static final String PRM_REMOVE_FROM_CART_ONE = "one";
 	public static final String PRM_REMOVE_GAME_FORM_CART = "remove";
-	public static final String PRM_REQUEST_FROM_PAGE = "request_from_page";
-	
 	
 }

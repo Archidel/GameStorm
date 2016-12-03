@@ -78,7 +78,7 @@
 				          	<button type="submit" name="search_genre" value="strategy" class="btn btn-default form-control">${strategy}</button>
 				          	<button type="submit" name="search_genre" value="shooter" class="btn btn-default form-control">${shooter}</button>
 				          	<button type="submit" name="search_genre" value="racing" class="btn btn-default form-control">${racing}</button>
-				          	<button type="submit" name="search_genre" value="mmo" class="btn btn-default form-control">${mmo}</button>
+				          	<button type="submit" name="search_genre" value="mmo" class="btn btn-default form-control">MMO</button>
 				          	<button type="submit" name="search_genre" value="mmorpg" class="btn btn-default form-control">MMORPG</button>
 				          	<button type="submit" name="search_genre" value="surival" class="btn btn-default form-control">${survival}</button>
 				          	<button type="submit" name="search_genre" value="simulator" class="btn btn-default form-control">${simulator}</button>
