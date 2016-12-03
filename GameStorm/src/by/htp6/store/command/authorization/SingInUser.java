@@ -44,6 +44,7 @@ public class SingInUser implements Command {
 			page = NamePage.ERROR_PAGE;
 			e.printStackTrace();
 		}
+		
 		return page;
 	}
 
