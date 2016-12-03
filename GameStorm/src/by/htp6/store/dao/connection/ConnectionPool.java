@@ -13,24 +13,43 @@ import by.htp6.store.dao.exception.DAOException;
 
 public class ConnectionPool implements Closeable{
 	private static final ConnectionPool instance = new ConnectionPool();
+	
 	private BlockingQueue<Connection> freeConnection;
 	private BlockingQueue<Connection> busyConnection;
-	private int poolsize = 6;
 	
-	private ConnectionPool() {}
+	private int poolsize;
+	private String driver;
+	private String user;
+	private String password;
+	private String url;
+	
+	private ConnectionPool() {
+		DBResourceManager resourceManager = DBResourceManager.getInstance();
+		this.driver = resourceManager.getValue(DBParameter.DB_DRIVER);
+		this.user = resourceManager.getValue(DBParameter.DB_USER);
+		this.password = resourceManager.getValue(DBParameter.DB_PASSWORD);
+		this.url = resourceManager.getValue(DBParameter.DB_URL);
+		
+		try{
+			this.poolsize = Integer.parseInt(resourceManager.getValue(DBParameter.DB_POOLSIZE));	
+		}catch(NumberFormatException e){
+			poolsize = 6;
+		}
+	}
 
 	public void init() throws SQLException{
+		
 		freeConnection = new ArrayBlockingQueue<>(poolsize);
 		busyConnection = new ArrayBlockingQueue<>(poolsize);
 		
 		try {
-			Class.forName(DAOConfig.DRIVER_NAME);
+			Class.forName(driver);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		
 		for(int i = 0; i < poolsize; i++){
-			freeConnection.add(DriverManager.getConnection(DAOConfig.URL, DAOConfig.USER_NAME, DAOConfig.USER_PASSWORD));
+			freeConnection.add(DriverManager.getConnection(url, user, password));
 		}
 	}
 	
@@ -73,6 +92,5 @@ public class ConnectionPool implements Closeable{
 				e.printStackTrace();
 			}
 		}
-	//pool - Получает и удаляет главу этой очереди, или возвращает null, если эта очередь пуста.
 	}
 }
